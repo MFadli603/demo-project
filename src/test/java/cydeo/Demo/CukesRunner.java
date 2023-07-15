@@ -1,4 +1,4 @@
-package cydeo;
+package cydeo.Demo;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;

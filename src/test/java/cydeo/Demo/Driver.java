@@ -1,5 +1,6 @@
-package cydeo;
+package cydeo.Demo;
 
+import cydeo.Demo.ConfigurationReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;

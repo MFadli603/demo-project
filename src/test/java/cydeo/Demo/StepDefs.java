@@ -1,4 +1,4 @@
-package cydeo;
+package cydeo.Demo;
 
 import static org.junit.Assert.fail;
 
@@ -20,9 +20,7 @@ public class StepDefs {
 
     @Given("^I am on the home page$")
     public void i_am_on_the_home_page() throws Throwable {
-        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        Driver.getDriver().manage().window().maximize();
-        Driver.getDriver().get("http://etsy.com");
+        Driver.getDriver().get(ConfigurationReader.getProperty("hr_url"));
 
     }
 
@@ -52,4 +50,19 @@ public class StepDefs {
         Driver.closeDriver();
     }
 
+    @Given("a user is on the Activity Stream page")
+    public void aUserIsOnTheActivityStreamPage() {
+    }
+
+    @When("the page loads")
+    public void thePageLoads() {
+    }
+
+    @Then("the user should see the following options:")
+    public void theUserShouldSeeTheFollowingOptions() {
+    }
+
+    @When("the user clicks on the {string} tab")
+    public void theUserClicksOnTheTab(String arg0) {
+    }
 }
